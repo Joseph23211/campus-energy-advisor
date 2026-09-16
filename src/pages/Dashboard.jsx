@@ -8,6 +8,7 @@ import BuildingCard from '../components/BuildingCard';
 import AlertCard from '../components/AlertCard';
 import SectionHeader from '../components/SectionHeader';
 import EnergyAdvisor from '../components/EnergyAdvisor';
+import PredictedUsageCard from '../components/PredictedUsageCard';
 import { liveMetrics, consumptionToday } from '../data/mockEnergyData';
 import { mockBuildings } from '../data/mockBuildings';
 import { mockAlerts } from '../data/mockAlerts';
@@ -60,8 +61,9 @@ export default function Dashboard() {
         <div className="lg:col-span-3">
           <EnergyChart />
         </div>
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 space-y-6">
           <CampusMap />
+          <PredictedUsageCard />
         </div>
       </div>
 
