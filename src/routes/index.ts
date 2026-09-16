@@ -18,3 +18,6 @@ router.use('/alerts', alertsRoutes);
 router.use('/sustainability', sustainabilityRoutes);
 
 export default router;
+import predictionsRoutes from './predictions.routes';
+// ...
+router.use('/predictions', predictionsRoutes);
